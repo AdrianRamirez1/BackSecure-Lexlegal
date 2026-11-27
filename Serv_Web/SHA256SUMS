@@ -1,0 +1,4 @@
+b82eb1f1a0b6a94149dabf674808dd216016f41dedd61eb988a77238ed2af9e8  ./etc/network/interfaces
+540d1bf25aecd5df7999a0b6751d82411fea6bd9ee57c9fcca1e18620c9f1631  ./salidas/ip-direcciones.txt
+17b7a139dc0db793ecdfc584eb346360585d0a3129a29b8f5084897f5406795b  ./salidas/ip-rutas.txt
+72cb7e36e207bee1d20d8149db2fff2beb2d492842b7b3c074608eb2719ce626  ./var/www/html/wp-config.php

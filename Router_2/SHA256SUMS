@@ -1,0 +1,9 @@
+ae3a10ab30e8b541a43d013c760e4eab4de67b7c03011c858587cb05d8eea3aa  ./etc/default/isc-dhcp-relay
+dcc0b6cf2b1d773b4381c4c635629d1992fcfb52df9f201dcdd90b0cc47dc0db  ./etc/network/interfaces
+326cb988a7a87093aed857a5051eae204ed88c2e481f969d666ead174f6047b2  ./etc/nftables.conf
+7de9e61bfd3ef0b34bcacfba0fcbd0896611812ed74015f2dac1446c3bacd743  ./etc/sysctl.conf
+201d62965d88b73d18596502121897d30eccc3da93470b9a6d8c118939c8a71d  ./salidas/ip-direcciones.txt
+e2c2ac17097616ee184af9965776f83ad87dcf9e82ada5c8a3ea0f8371813fe8  ./salidas/ip-forward.txt
+1dca945bcf72968d2bff7ef16addd4ad963e35f1731c98d60bf1cf9ed88f8730  ./salidas/ip-rutas.txt
+e70dd2cb979969a55a7c597da18474c3e5cee1d059b8eb44933253acc269ce93  ./salidas/nft-ruleset.txt
+0ebfdc7337e2a6456d8c92d7f158bc960c24c870d55c15efbac3596266386aad  ./salidas/relay-estado.txt

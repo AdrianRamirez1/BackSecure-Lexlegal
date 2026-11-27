@@ -1,0 +1,1 @@
+restrict,from="172.16.10.20",command="/usr/local/bin/backup-rsync-wrapper" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL1XCIb3G4F6OUK1PcOe9bMPHCslem8TaNPZ24r3zHH6 backupsvc@backup

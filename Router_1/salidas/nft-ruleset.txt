@@ -1,0 +1,37 @@
+table inet filter {
+	chain input {
+		type filter hook input priority filter; policy drop;
+		iifname "enp0s3" udp dport 51820 accept
+		iif "lo" accept
+		ct state established,related accept
+		ct state invalid drop
+		iifname "enp0s8" ip protocol icmp accept
+		iifname "enp0s8" ip saddr 172.16.10.0/24 tcp dport 22 accept
+		log prefix "FW-INPUT-DROP " limit rate 5/minute
+	}
+
+	chain forward {
+		type filter hook forward priority filter; policy drop;
+		iifname "wg0" oifname "enp0s8" ip daddr 172.16.10.20 tcp dport 22 accept
+		ct state established,related accept
+		ct state invalid drop
+		iifname "enp0s3" oifname "enp0s9" ip daddr 172.16.100.10 tcp dport { 80, 443 } accept
+		iifname "enp0s8" oifname "enp0s3" accept
+		iifname "enp0s8" oifname "enp0s9" ip daddr 172.16.100.10 tcp dport { 80, 443 } accept
+		iifname "enp0s8" oifname "enp0s9" ip saddr 172.16.10.0/24 ip daddr 172.16.100.10 tcp dport 22 accept
+		iifname "enp0s9" oifname "enp0s3" tcp dport { 53, 80, 443 } accept
+		iifname "enp0s9" oifname "enp0s3" udp dport 53 accept
+		log prefix "FW-FWD-DROP " limit rate 5/minute
+	}
+}
+table ip nat {
+	chain prerouting {
+		type nat hook prerouting priority dstnat; policy accept;
+		iifname "enp0s3" tcp dport { 80, 443 } dnat to 172.16.100.10
+	}
+
+	chain postrouting {
+		type nat hook postrouting priority srcnat; policy accept;
+		oifname "enp0s3" masquerade
+	}
+}

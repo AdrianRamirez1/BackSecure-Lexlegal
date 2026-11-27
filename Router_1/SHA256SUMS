@@ -1,0 +1,10 @@
+34d1f91259525cff68ef8ba1f22fa2f84641b75adacf8a2d8dac94fbac57b291  ./etc/network/interfaces
+d15bb450d93864c9452a3cb3d26f39f2beb4f96b54e894052ab7d30b3d05ab4d  ./etc/nftables.conf
+f86f3970f681d0746acd797b221640b67f18d2792fb1a03b3271ca3c164cc490  ./etc/sysctl.conf
+7de9e61bfd3ef0b34bcacfba0fcbd0896611812ed74015f2dac1446c3bacd743  ./etc/sysctl.d/99-forward.conf
+0f6f8386e0945307c0ca934c8b0a6f5145837df8664bee67fdaba72850c60e88  ./etc/wireguard/wg0.conf
+ee95ff8f22631528251be1e116b87a95bc14f9a1ab0b4f33112398474c11ad61  ./salidas/ip-direcciones.txt
+e2c2ac17097616ee184af9965776f83ad87dcf9e82ada5c8a3ea0f8371813fe8  ./salidas/ip-forward.txt
+ffb81bbb1ae70daf393791bce33f2803cb9d78e9ccd8f924fcba36dfed0fefc6  ./salidas/ip-rutas.txt
+1e9e2f405df396eb8f6cf07b4443d0956e47a3ea287b3b2afa2766fa9f72f1ab  ./salidas/nft-ruleset.txt
+a15948a21f3a5c6207c69ede65d35d84f39208168c36aded1e1a4deb2a4d9f38  ./salidas/wg-show.txt

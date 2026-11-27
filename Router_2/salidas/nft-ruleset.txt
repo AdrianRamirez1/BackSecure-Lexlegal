@@ -1,0 +1,25 @@
+table inet filter {
+	chain input {
+		type filter hook input priority filter; policy drop;
+		iif "lo" accept
+		ct state established,related accept
+		ip protocol icmp accept
+		udp dport 67 accept
+		iifname "enp0s8" ip saddr 172.16.10.0/24 tcp dport 22 accept
+	}
+
+	chain forward {
+		type filter hook forward priority filter; policy drop;
+		iifname "enp0s3" ip saddr 10.10.10.0/24 oifname "enp0s8" ip daddr 172.16.10.20 tcp dport 22 accept
+		ct state established,related accept
+		ct state invalid drop
+		iifname "enp0s8" ip saddr 172.16.10.20 accept
+		iifname { "enp0s9", "enp0s10" } oifname "enp0s8" ip daddr 172.16.10.30 accept
+		iifname { "enp0s9", "enp0s10" } oifname "enp0s8" ip daddr 172.16.10.10 udp dport 67 accept
+		iifname { "enp0s8", "enp0s9", "enp0s10" } oifname "enp0s3" accept
+	}
+
+	chain output {
+		type filter hook output priority filter; policy accept;
+	}
+}

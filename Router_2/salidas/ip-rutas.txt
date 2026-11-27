@@ -1,0 +1,5 @@
+default via 172.16.0.1 dev enp0s3 onlink 
+172.16.0.0/30 dev enp0s3 proto kernel scope link src 172.16.0.2 
+172.16.10.0/24 dev enp0s8 proto kernel scope link src 172.16.10.1 
+172.16.20.0/24 dev enp0s9 proto kernel scope link src 172.16.20.1 
+172.16.30.0/24 dev enp0s10 proto kernel scope link src 172.16.30.1 

@@ -1,0 +1,6 @@
+# BackupSecure: copias automaticas (se ejecutan como el usuario backupsvc)
+# m h dom mes dow usuario comando
+0 2 * * 1-6  backupsvc  /usr/local/bin/backup-daily.sh  >> /srv/backups/logs/cron.log 2>&1
+0 3 * * 0    backupsvc  /usr/local/bin/backup-weekly.sh >> /srv/backups/logs/cron.log 2>&1
+0 4 1 * * backupsvc /usr/local/bin/restore.sh --prueba >> /srv/backups/logs/cron.log 2>&1
+0 5 * * 0 backupsvc /usr/local/bin/verify-integrity.sh >> /srv/backups/logs/cron.log 2>&1

@@ -1,0 +1,5 @@
+# nombre;ip;ruta
+dhcp;172.16.10.10;/etc/dhcp
+dhcp;172.16.10.10;/etc/default/isc-dhcp-server
+dhcp;172.16.10.10;/etc/network/interfaces
+dhcp;172.16.10.10;/var/lib/dhcp

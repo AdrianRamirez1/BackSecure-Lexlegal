@@ -1,0 +1,17 @@
+90dc5c87c01c6fc711452118a6cac1ed79f183017ecd2ade35af8c652b640d10  ./etc/backupsecure/origenes.list
+6f5f174b929c158a8be7cfb8c346419af0805b862290e657dc84682ad7305f8a  ./etc/cron.d/backupsecure
+360ae31f36e5193dcfb24d0e699e59b88175558a45c922bc9662265a38fb8f82  ./etc/fstab
+ac8f14c0064f538d71a33c8c8732681c2dab3a46321b6f7490b5def67641af4e  ./etc/mdadm/mdadm.conf
+0001f8c88fa01da6be395010a6de8dd6578c48f334810ec92430ee44b5a89d7e  ./etc/network/interfaces
+a48ca556ca61bc3aaef149c7c6e2a3a7e83ed96e869d40ab096ad071425e26c9  ./salidas/bd-estructura.sql
+25fffc2d8d8d6a3d6f590caf9c3abdda9f2fa84b01986461af30dfd5ca0b4a49  ./salidas/bd-permisos.txt
+bc435b6da19de3a2bd4c99f0eab8d2689b477f609907947452011319809ec4f9  ./salidas/bd-tablas.txt
+811615966c7188a79675dbd296e63d5b53361a63ae655ecdb6f5c393f06f3cbd  ./salidas/ip-direcciones.txt
+8d0a3f16f18b990754a6df88e8196bf03879eb39e99de7f647c1b9f1d30e2cd1  ./salidas/ip-rutas.txt
+bcfbb03232133c052bc478b7729b785bdf8487783ebbbba158f1ccd224008eff  ./salidas/mdadm-detail.txt
+b5d96e894b4ecb2b37196734bd27cc031a345ad2e0cb4a32ce62ab146537e120  ./salidas/mdstat.txt
+a5b39bdca483703aa4b6e584089b85cc29b451278ec5ac1e5389ae1db8400dfb  ./usr/local/bin/backup-daily.sh
+a7266eb80b408f2d252de10177430f484d87358dc91c755ac70cb04b6a4a252f  ./usr/local/bin/backupsecuremenu.sh
+a5b39bdca483703aa4b6e584089b85cc29b451278ec5ac1e5389ae1db8400dfb  ./usr/local/bin/backup-weekly.sh
+6745ca7afd3b9dff58682c0d81f4d4660890b11d4ea606d5991ab86ff541bd4e  ./usr/local/bin/restore.sh
+c49856ac202aebeab899d6b7601b2f55fde5abc059c6b322884d01beb326a968  ./usr/local/bin/verify-integrity.sh

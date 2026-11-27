@@ -1,0 +1,15 @@
+● isc-dhcp-server.service - LSB: DHCP server
+     Loaded: loaded (/etc/init.d/isc-dhcp-server; generated)
+     Active: active (running) since Tue 2026-11-24 19:04:47 CET; 2h 14min ago
+       Docs: man:systemd-sysv-generator(8)
+    Process: 1020 ExecStart=/etc/init.d/isc-dhcp-server start (code=exited, status=0/SUCCESS)
+      Tasks: 1 (limit: 496)
+     Memory: 6.5M
+        CPU: 53ms
+     CGroup: /system.slice/isc-dhcp-server.service
+             └─1032 /usr/sbin/dhcpd -4 -q -cf /etc/dhcp/dhcpd.conf enp0s3
+
+Nov 24 19:04:45 DHCP systemd[1]: Starting isc-dhcp-server.service - LSB: DHCP server...
+Nov 24 19:04:45 DHCP isc-dhcp-server[1020]: Launching IPv4 server only.
+Nov 24 19:04:47 DHCP isc-dhcp-server[1020]: Starting ISC DHCPv4 server: dhcpd.
+Nov 24 19:04:47 DHCP systemd[1]: Started isc-dhcp-server.service - LSB: DHCP server.

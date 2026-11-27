@@ -1,0 +1,5 @@
+2f4c9d5ac83a70094ece1cf9a9b1486f37df77c09c904960041117bfd7aa86dd  ./etc/network/interfaces
+fa2db676c6992e6b4c9fb358555df784552ed4118c911260312fd17812d97efc  ./etc/wireguard/wg0.conf
+816355e04473ad6eb3839ba9f9341ace08fec1bb01aacbde2bb5b7937b89fbe0  ./salidas/ip-direcciones.txt
+3010d08d4ade19349ca12914a91c7e69ffeabf83ea4bafc540c82b1375c7bf70  ./salidas/ip-rutas.txt
+249259b10d9149ef4b6f3778739ec19f8f442f7010767de1aa71f2007c2c4adf  ./salidas/wg-show.txt

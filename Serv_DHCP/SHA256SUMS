@@ -1,0 +1,9 @@
+e54a344e739588d40a254f6a6194f24703cabfa6f33574fe08829b6b8bf6b82b  ./etc/default/isc-dhcp-server
+505c66fbb4a0e7f9aefe98b56bf6e18da15c4d3cfc93dae8f3dc4a812f556ccd  ./etc/dhcp/dhcpd.conf
+970cda5617d6132149c597c4b245de51ea509f8b975142daa493d6c739b7e598  ./etc/network/interfaces
+8de8f963065bbd4cc4bc10d74253ba12b49ab8c7a903da7fca3c0e45d54839f3  ./etc/sudoers.d/backupuser
+cb5c753e7411ebb6ee40feaa3ddb947bf57f0d341d4e6fb562e13567e5d4b40a  ./home/backupuser/ssh/authorized_keys
+071d1383dec7d8fa17b6e63d9a7990047a2b472e3eaddbe978404df48df94a80  ./salidas/dhcp-estado.txt
+c4dde95f2709063aaf2272566380be6715ea3a14117f633a161443231675db47  ./salidas/ip-direcciones.txt
+f61007d68eb2dbce05d72b8df630924baaa4d9c08c3ffc047c11759163e25c7e  ./salidas/ip-rutas.txt
+ddc004837dfeb26a0cfabc8727ebd21f909d8b0580c86568483e6cdfb84e45bc  ./usr/local/bin/backup-rsync-wrapper

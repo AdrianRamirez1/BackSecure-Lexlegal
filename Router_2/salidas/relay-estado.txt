@@ -1,0 +1,16 @@
+● isc-dhcp-relay.service - LSB: DHCP relay
+     Loaded: loaded (/etc/init.d/isc-dhcp-relay; generated)
+     Active: active (running) since Tue 2026-11-24 19:04:56 CET; 2h 31min ago
+       Docs: man:systemd-sysv-generator(8)
+    Process: 783 ExecStart=/etc/init.d/isc-dhcp-relay start (code=exited, status=0/SUCCESS)
+      Tasks: 1 (limit: 496)
+     Memory: 2.6M
+        CPU: 60ms
+     CGroup: /system.slice/isc-dhcp-relay.service
+             └─787 /usr/sbin/dhcrelay -q -i enp0s8 -i enp0s9 -i enp0s10 172.16.10.10
+
+Nov 24 19:04:56 router2 systemd[1]: Starting isc-dhcp-relay.service - LSB: DHCP relay...
+Nov 24 19:04:56 router2 isc-dhcp-relay[787]: Requesting: enp0s8 as upstream: Y downstream: Y
+Nov 24 19:04:56 router2 isc-dhcp-relay[787]: Requesting: enp0s9 as upstream: Y downstream: Y
+Nov 24 19:04:56 router2 isc-dhcp-relay[787]: Requesting: enp0s10 as upstream: Y downstream: Y
+Nov 24 19:04:56 router2 systemd[1]: Started isc-dhcp-relay.service - LSB: DHCP relay.
